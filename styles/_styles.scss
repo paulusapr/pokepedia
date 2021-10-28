@@ -1,0 +1,199 @@
+html {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html *,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body,
+#__next {
+  height: 100% !important;
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+a {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.h-50 {
+  height: 50%;
+}
+
+.border {
+  border: 1px solid $defaultTextColor;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.padding-2 {
+  padding: 10px;
+}
+.padding-4 {
+  padding: 20px;
+}
+
+.margin-top-2 {
+  margin-top: 10px;
+}
+.margin-top-4 {
+  margin-top: 20px;
+}
+.margin-bottom-2 {
+  margin-bottom: 10px;
+}
+.margin-bottom-4 {
+  margin-bottom: 20px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $defaultBackground;
+  overflow: auto;
+  .home-landing {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+    h1 {
+      background: linear-gradient(
+        to right, 
+        hsl(98 100% 62%), 
+        hsl(204 100% 59%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $defaultBackground;
+  overflow: auto;
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: $defaultTextColor;
+    .divider {
+      background: $defaultTextColor;
+      margin: 0 10px;
+    }
+  }
+  .logo {
+    max-width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    .card-pokemon {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .profile {
+      max-width: 360px;
+    }
+  }
+}
